@@ -1,5 +1,5 @@
 (assert
-	(book
+	(books
 		(name "book_3")
 		(genre "thriller")
 		(author "dan_brown")

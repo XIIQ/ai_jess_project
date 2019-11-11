@@ -1,5 +1,5 @@
 (assert
-	(book
+	(books
 		(name "book_1")
 		(genre "fantasy")
 		(author "jk_rowling")

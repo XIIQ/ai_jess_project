@@ -49,7 +49,7 @@ class Setup(object):
 
         file_data += "(printout t \"All the facts are registered and ready to use!!\" crlf)\n"
 
-        with open(join(self.path,"register_facts.clp"),"w+") as target:
+        with open(join(self.path,"2_register_facts.clp"),"w+") as target:
             target.write(file_data)
             target.close()
 
@@ -66,7 +66,7 @@ class Setup(object):
 
         file_data += "(printout t \"All the templates are registered and ready to use!!\" crlf)\n"
 
-        with open(join(self.path,"register_templates.clp"),"w+") as target:
+        with open(join(self.path,"1_register_templates.clp"),"w+") as target:
             target.write(file_data)
             target.close()
 
