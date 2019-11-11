@@ -1,0 +1,5 @@
+(assert
+	(styles
+		(name "intricate")
+	)
+)
