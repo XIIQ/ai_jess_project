@@ -1,4 +1,4 @@
-(deftemplate book
+(deftemplate books
   (slot name (type STRING))
   (multislot genre (type STRING))
   (slot author (type STRING))

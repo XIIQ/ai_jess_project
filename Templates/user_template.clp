@@ -1,4 +1,4 @@
-(deftemplate user
+(deftemplate users
   (slot username (type STRING))
   (multislot genre (type STRING))
   (slot author (type STRING))
