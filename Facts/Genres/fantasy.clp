@@ -1,0 +1,5 @@
+(assert
+	(genres
+		(name "fantasy")
+	)
+)
