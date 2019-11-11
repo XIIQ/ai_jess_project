@@ -1,0 +1,5 @@
+(assert
+	(pacings
+		(name "fast")
+	)
+)
