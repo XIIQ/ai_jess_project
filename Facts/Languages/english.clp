@@ -1,0 +1,5 @@
+(assert
+	(languages
+		(name "english")
+	)
+)
