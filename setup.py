@@ -10,6 +10,7 @@ class Setup(object):
         super(Setup, self).__init__()
         self.path = getcwd()
         self.build_register_templates_clp()
+        self.build_register_facts_clp()
         self.build_init_clp()
         self.path = join(self.path,"init.clp")
         if("\\" in self.path):
@@ -30,6 +31,25 @@ class Setup(object):
         file_data += "(printout t \"The application is initialized and ready to use!!\" crlf)\n"
 
         with open(join(self.path,"init.clp"),"w+") as target:
+            target.write(file_data)
+            target.close()
+
+    def build_register_facts_clp(self):
+        dir_list = listdir(join(self.path,"Facts"))
+        file_data = ""
+
+        for folder_name in dir_list:
+            fact_list = listdir(join(self.path,"Facts",folder_name))
+            for file_name in fact_list:
+                full_path = join(self.path,"Facts",folder_name,file_name)
+                if(isfile(full_path) and ".clp" in file_name):
+                    if("\\" in full_path):
+                        full_path = full_path.replace("\\","\\\\")
+                    file_data += "(batch \"" + full_path +"\")\n"
+
+        file_data += "(printout t \"All the facts are registered and ready to use!!\" crlf)\n"
+
+        with open(join(self.path,"register_facts.clp"),"w+") as target:
             target.write(file_data)
             target.close()
 
