@@ -1,5 +1,0 @@
-(assert
-	(styles
-		(name "conversational")
-	)
-)

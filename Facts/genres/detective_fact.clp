@@ -1,5 +1,5 @@
 (assert
 	(genres
-		(name "detective")
+		(type "detective")
 	)
 )

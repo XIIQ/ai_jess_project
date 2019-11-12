@@ -1,5 +1,5 @@
 (assert
 	(genres
-		(name "romance")
+		(type "mystery")
 	)
 )

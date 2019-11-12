@@ -1,5 +1,5 @@
 (assert
 	(pacings
-		(name "slow")
+		(type "slow")
 	)
 )

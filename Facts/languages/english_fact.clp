@@ -1,5 +1,5 @@
 (assert
 	(languages
-		(name "hindi")
+		(type "english")
 	)
 )

@@ -1,0 +1,5 @@
+(assert
+	(genres
+		(type "educational")
+	)
+)

@@ -1,5 +1,5 @@
 (assert
 	(genres
-		(name "mystery")
+		(type "dystopia")
 	)
 )

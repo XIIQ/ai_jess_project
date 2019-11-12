@@ -1,5 +1,0 @@
-(assert
-	(genres
-		(name "educational")
-	)
-)
