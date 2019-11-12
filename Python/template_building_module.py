@@ -25,6 +25,7 @@ class Template_Builder(object):
         {
         "name" : "books",
         "slots" : [
+        ["slot", "score", "INTEGER"],
         ["slot", "name", "STRING"],
         ["multislot","genre","STRING"],
         ["slot","author","STRING"],
@@ -77,7 +78,10 @@ class Template_Builder(object):
         for template in self.templates:
             output_file_data = "(deftemplate " + template["name"] + "\n"
             for slot in template["slots"]:
-                output_file_data += "\t(" + slot[0] + " " + slot[1] + " (type " + slot[2] + "))\n"
+                if(slot[1] == "score"):
+                    output_file_data += "\t(" + slot[0] + " " + slot[1] + " (default 0) (type " + slot[2] + "))\n"
+                else:
+                    output_file_data += "\t(" + slot[0] + " " + slot[1] + " (type " + slot[2] + "))\n"
             output_file_data += ")"
 
             with open(join(self.path,(template["name"] + "_template.clp")),"w+") as target:

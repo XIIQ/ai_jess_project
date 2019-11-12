@@ -29,7 +29,7 @@ class Fact_Builder(object):
         "facts" : [
         {
         "name" : "book_1",
-        "genre" : "thriller",
+        "genre" : ["thriller","romance"],
         "author" : "jk_rowling",
         "language" : "english",
         "age_group" : "young_adult",
@@ -38,7 +38,7 @@ class Fact_Builder(object):
         },
         {
         "name" : "book_2",
-        "genre" : "romance",
+        "genre" : ["romance"],
         "author" : "jk_rowling",
         "language" : "english",
         "age_group" : "young_adult",
@@ -47,7 +47,7 @@ class Fact_Builder(object):
         },
         {
         "name" : "book_3",
-        "genre" : "detective",
+        "genre" : ["detective"],
         "author" : "sydney_sheldon",
         "language" : "english",
         "age_group" : "adult",
@@ -56,7 +56,7 @@ class Fact_Builder(object):
         },
         {
         "name" : "book_4",
-        "genre" : "science_fiction",
+        "genre" : ["science_fiction"],
         "author" : "enid_blyton",
         "language" : "english",
         "age_group" : "children",
@@ -150,7 +150,13 @@ class Fact_Builder(object):
                     filename = fact["name"]
                 output_file_data = "(assert\n\t(" + category["name"] + "\n"
                 for slot,value in fact.items():
-                    output_file_data += "\t\t(" + slot + " \"" + value + "\")\n"
+                    if(slot == "genre"):
+                        output_file_data +="\t\t(" + slot
+                        for genre in value:
+                            output_file_data += " \"" + genre + "\""
+                        output_file_data += ")\n"
+                    else:
+                        output_file_data += "\t\t(" + slot + " \"" + value + "\")\n"
                 output_file_data += "\t)\n)"
 
                 with open(join(folder_path,(filename + "_fact.clp")),"w+") as target:

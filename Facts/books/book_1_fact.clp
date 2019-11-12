@@ -1,7 +1,7 @@
 (assert
 	(books
 		(name "book_1")
-		(genre "thriller")
+		(genre "thriller" "romance")
 		(author "jk_rowling")
 		(language "english")
 		(age_group "young_adult")

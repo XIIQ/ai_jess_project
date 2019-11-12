@@ -1,4 +1,5 @@
 (deftemplate books
+	(slot score (default 0) (type INTEGER))
 	(slot name (type STRING))
 	(multislot genre (type STRING))
 	(slot author (type STRING))
