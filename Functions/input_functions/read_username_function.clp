@@ -1,0 +1,5 @@
+(deffunction read_username ()
+  (printout t "Please enter your username!!" crlf)
+  (bind ?username (read))
+  (return ?username)
+)
