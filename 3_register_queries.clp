@@ -1,0 +1,6 @@
+(batch "C:\\Codes\\ai_jess_project\\Queries\\age_group_queries.clp")
+(batch "C:\\Codes\\ai_jess_project\\Queries\\genre_queries.clp")
+(batch "C:\\Codes\\ai_jess_project\\Queries\\language_queries.clp")
+(batch "C:\\Codes\\ai_jess_project\\Queries\\pacing_queries.clp")
+(batch "C:\\Codes\\ai_jess_project\\Queries\\style_queries.clp")
+(printout t "All the queries are registered and ready to fire!!" crlf)

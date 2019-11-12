@@ -2,5 +2,7 @@
 (reset)
 (batch "C:\\Codes\\ai_jess_project\\1_register_templates.clp")
 (batch "C:\\Codes\\ai_jess_project\\2_register_facts.clp")
+(batch "C:\\Codes\\ai_jess_project\\3_register_queries.clp")
+(batch "C:\\Codes\\ai_jess_project\\4_register_functions.clp")
 (batch "C:\\Codes\\ai_jess_project\\imports.clp")
 (printout t "The application is initialized and ready to use!!" crlf)
