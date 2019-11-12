@@ -1,3 +1,4 @@
+(clear)
 (reset)
 (batch "C:\\Codes\\ai_jess_project\\1_register_templates.clp")
 (batch "C:\\Codes\\ai_jess_project\\2_register_facts.clp")
