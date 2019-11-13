@@ -153,10 +153,10 @@ class Fact_Builder(object):
                     if(slot == "genre"):
                         output_file_data +="\t\t(" + slot
                         for genre in value:
-                            output_file_data += " \"" + genre + "\""
+                            output_file_data += " " + genre
                         output_file_data += ")\n"
                     else:
-                        output_file_data += "\t\t(" + slot + " \"" + value + "\")\n"
+                        output_file_data += "\t\t(" + slot + " " + value + ")\n"
                 output_file_data += "\t)\n)"
 
                 with open(join(folder_path,(filename + "_fact.clp")),"w+") as target:

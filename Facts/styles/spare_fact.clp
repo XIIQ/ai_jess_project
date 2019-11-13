@@ -1,5 +1,5 @@
 (assert
 	(styles
-		(type "spare")
+		(type spare)
 	)
 )

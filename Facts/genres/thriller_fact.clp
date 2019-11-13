@@ -1,5 +1,5 @@
 (assert
 	(genres
-		(type "thriller")
+		(type thriller)
 	)
 )

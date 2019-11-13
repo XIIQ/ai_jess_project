@@ -1,5 +1,5 @@
 (assert
 	(genres
-		(type "science_fiction")
+		(type science_fiction)
 	)
 )

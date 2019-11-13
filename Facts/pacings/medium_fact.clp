@@ -1,5 +1,5 @@
 (assert
 	(pacings
-		(type "medium")
+		(type medium)
 	)
 )

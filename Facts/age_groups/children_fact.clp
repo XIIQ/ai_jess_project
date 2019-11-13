@@ -1,5 +1,5 @@
 (assert
 	(age_groups
-		(type "children")
+		(type children)
 	)
 )

@@ -1,5 +1,5 @@
 (assert
 	(styles
-		(type "intricate")
+		(type intricate)
 	)
 )
