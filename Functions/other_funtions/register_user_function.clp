@@ -10,4 +10,5 @@
       (style ?style)
     )
   )
+  (increment_score ?age_group ?pacing ?genre ?language ?style)
 )
