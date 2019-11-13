@@ -1,4 +1,5 @@
 (batch "C:\\Codes\\ai_jess_project\\Queries\\age_group_queries.clp")
+(batch "C:\\Codes\\ai_jess_project\\Queries\\book_queries.clp")
 (batch "C:\\Codes\\ai_jess_project\\Queries\\genre_queries.clp")
 (batch "C:\\Codes\\ai_jess_project\\Queries\\language_queries.clp")
 (batch "C:\\Codes\\ai_jess_project\\Queries\\pacing_queries.clp")
