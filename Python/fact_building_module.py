@@ -61,7 +61,7 @@ class Fact_Builder(object):
         "language" : "english",
         "age_group" : "children",
         "pacing" : "medium",
-        "style" : "cspare"
+        "style" : "spare"
         }
         ]
         },
